@@ -1,0 +1,26 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    left: 0px;
+    top: 0px;
+    background: #3F51B5;
+}
+
+.icon_logout {
+    position: absolute;
+    /*left: 97.31%;*/
+    left: 1866px;
+    right: 1.7%;
+    top: 35.19%;
+    bottom: 35.19%;
+}
+
+.icon_bell {
+    position: absolute;
+    /*left: 95.33%;*/
+    left: 1826px;
+    right: 3.83%;
+    top: 35.15%;
+    bottom: 34.37%;
+}
