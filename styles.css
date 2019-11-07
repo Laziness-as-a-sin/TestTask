@@ -7,11 +7,17 @@ header {
     background: #3F51B5;
 }
 
+.icon_main{
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
 .icon_logout {
     position: absolute;
     /*left: 97.31%;*/
     left: 1866px;
-    right: 1.7%;
+    /*right: 1.7%;*/
     top: 35.19%;
     bottom: 35.19%;
 }
@@ -20,7 +26,75 @@ header {
     position: absolute;
     /*left: 95.33%;*/
     left: 1826px;
-    right: 3.83%;
+    /*right: 3.83%;*/
     top: 35.15%;
     bottom: 34.37%;
+}
+
+.topP{
+    /* Rectangle */
+
+    position: absolute;
+    width: 842px;
+    height: 30px;
+    left: 191px;
+    top: 17px;
+
+    /* Gray 1 */
+    background: #333333;
+    opacity: 0.23;
+    border-radius: 4px;
+}
+
+.topP_button{
+    /* Group */
+
+    position: absolute;
+    width: 37px;
+    height: 19px;
+    left: 6px;
+    top: 6px;
+
+    background: #22a65d;
+    border-radius: 4px;
+}
+
+.topP_text{
+    position: absolute;
+    /*width: 769px;*/
+    /*height: 16px;*/
+    /*left: 248px;*/
+    /*top: 24px;*/
+    top: 8px;
+    left: 57px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #CDD1EA;
+
+}
+
+.topP_button_text{
+    position: absolute;
+    height: 12px;
+    left: 6px;
+    right: 7px;
+    top: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
 }
