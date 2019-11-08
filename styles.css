@@ -1,11 +1,14 @@
 body, html {
     margin:0;
     padding:0;
-    background: #F9FAFB
+    width: 100%;
+    height: 100%;
+    background: #F9FAFB;
+    overflow: hidden
 }
 
 .head_top{
-    position: static;
+    position: relative;
     width: 100%;
     background: #3F51B5;
 }
@@ -64,4 +67,78 @@ body, html {
     max-width: 20px;
     max-height: 20px;
     padding-right: 16px;
+}
+
+.left_menu{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 270px;
+    height:100%;
+    bottom: 0;
+    background: #FFFFFF;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15), 0px 1px 0px rgba(63, 63, 68, 0.05);
+}
+
+.block_avatar_name{
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    margin-left: 79px;
+    margin-top: 24px;
+    width: 112px;
+    height: 156px;
+}
+
+.img_avatar{
+    margin-left: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-size: 100px 100px;
+    background-image: url("avatar.jpg");
+}
+
+.box_text_name{
+    text-align: center;
+    margin-top: 16px;
+    width: 100%;
+    height: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    white-space: nowrap;
+    /*text-align: center;*/
+    letter-spacing: -0.05px;
+
+    color: #3A3B3F;
+}
+
+.box_text_position{
+    margin-top: 4px;
+    height: 16px;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    color: #9EA0A5;
+}
+
+.something_line_1{
+    height: 1px;
+    width: 238px;
+    margin-left: 16px;
+    margin-top: 23px;
+    background: #E4E7EB;
 }
