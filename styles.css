@@ -4,7 +4,13 @@ body, html {
     width: 100%;
     height: 100%;
     background: #F9FAFB;
-    overflow: hidden
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(http://fonts.googleapis.com/css?family=Roboto); /* Путь к файлу со шрифтом */
 }
 
 .head_top{
@@ -33,12 +39,10 @@ body, html {
     position: relative;
     width: 179px;
     height: 36px;
-    /*viewBox: 0 0 179 36;*/
 }
 
 .top_ad_somethings{
     position: relative;
-    /*padding-left: 34px;*/
     width: 842px;
     height: 30px;
     background: #333333;
@@ -51,15 +55,12 @@ body, html {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
-    /*margin: 0;*/
 }
 
 .icon_logout{
     position: relative;
     max-width: 20px;
     max-height: 20px;
-    /*viewBox: 0 0 20 20;*/
-
 }
 
 .icon_bell {
@@ -70,6 +71,7 @@ body, html {
 }
 
 .left_menu{
+    float: left;
     position: relative;
     display: flex;
     box-sizing: border-box;
@@ -155,7 +157,6 @@ body, html {
 
 .menu_group {
     position: relative;
-    flex-direction: row;
     margin-top: 20px;
     width: 238px;
     height: 316px;
@@ -182,3 +183,69 @@ body, html {
     margin-left: 15px;
 }
 
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:100%;
+    bottom: 0;
+}
+
+.right_content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding-left: 0px;
+}
+
+.right_content_top{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #E4E7EB;
+    /*padding-top: 20px;*/
+    padding-left: 24px;
+    height: 57px;
+}
+
+.highlighting{
+    border-bottom: 2px solid #1665D8;
+}
+
+.right_content_bot_{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /*background: red;*/
+}
+
+.right_content_top_button{
+    box-sizing: border-box;
+    padding-top: 21px;
+    width: 90px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.05px;
+    line-height: 100%;
+    color: #3A3B3F;
+    cursor: pointer;
+}
+
+#right_top_tabs{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+
+.invisibility{
+    display: none;
+}
