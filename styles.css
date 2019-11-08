@@ -145,10 +145,18 @@ body, html {
     background: #E4E7EB;
 }
 
+.something_line_2{
+    position: relative;
+    height: 1px;
+    width: 238px;
+    margin-top: 40px;
+    background: #E4E7EB;
+}
+
 .menu_group {
     position: relative;
     flex-direction: row;
-    margin-top: 24px;
+    margin-top: 20px;
     width: 238px;
     height: 316px;
 }
@@ -169,22 +177,8 @@ body, html {
     background: #b3d4fc;
 }
 
+.right_text_support{
+    margin-top: 24px;
+    margin-left: 15px;
+}
 
-/*.text_in_menu{*/
-/*    position: relative;*/
-/*    margin-left: 8px;*/
-/*    height: 20px;*/
-/*    width: auto;*/
-/*    margin-top: 13px;*/
-
-/*    font-family: Roboto;*/
-/*    font-style: normal;*/
-/*    font-weight: 500;*/
-/*    font-size: 14px;*/
-/*    line-height: 20px;*/
-/*    !* identical to box height, or 143% *!*/
-
-/*    letter-spacing: -0.05px;*/
-
-/*    color: #66788A;*/
-/*}*/
