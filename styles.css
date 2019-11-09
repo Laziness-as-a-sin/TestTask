@@ -218,11 +218,24 @@ body, html {
     border-bottom: 2px solid #1665D8;
 }
 
-.right_content_bot_{
+.right_content_bot{
+    position: relative;
+    box-sizing: border-box;
     display: flex;
     width: 100%;
     height: 100%;
+    /*padding-left: 24px;*/
+    padding-top: 12px;
     /*background: red;*/
+}
+
+.right_content_bot_{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
 }
 
 .right_content_top_button{
@@ -240,6 +253,28 @@ body, html {
     cursor: pointer;
 }
 
+.right_content_bot_left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /*width: 375px;*/
+    box-sizing: border-box;
+    border: 1px solid orange;
+    margin-left: 24px;
+}
+
+.right_content_bot_right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-left: 28px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
 #right_top_tabs{
     display: flex;
     position: relative;
@@ -248,4 +283,43 @@ body, html {
 
 .invisibility{
     display: none;
+}
+
+.form_of_upload_img{
+    margin: 12px 0 12px;
+    width: 375px;
+    height: 279px;
+    border:  1px solid green;
+}
+
+.form_send_setting{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0 12px;
+    min-height: 100px;
+    width: 910px;
+    background: #FFFFFF;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15), 0px 1px 0px rgba(63, 63, 68, 0.05);
+    border-radius: 4px;
+}
+
+.form_send_setting header{
+    width: 100%;
+    height: 71px;
+    border-bottom: 1px solid #E4E7EB;;
+    /*border: 1px solid purple;*/
+}
+
+.form_send_setting article{
+    width: 100%;
+    min-height: 150px;
+    /*border: 1px solid red;*/
+}
+
+.form_send_setting footer{
+    width: 100%;
+    height: 88px;
+    /*border: 1px solid purple;*/
 }
