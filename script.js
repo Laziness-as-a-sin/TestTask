@@ -4,7 +4,8 @@ window.onload = function () {
     tab = document.getElementsByClassName('right_content_top_button');
     tabContent = document.getElementsByClassName('right_content_bot_');
     tabContent[0].classList.remove('invisibility');
-    tab[0].classList.add('highlighting')
+    tab[0].classList.add('highlighting');
+    popup_message = document.getElementById("popup_message");
 
     checkBoxes = document.getElementsByClassName('checkbox');
     for (var i = 0; i < checkBoxes.length; i++) {
@@ -65,9 +66,36 @@ document.getElementById('form_notifications').onclick = function (event) {
 function form_notifications_submit() {
     try{
         document.form_notifications.submit();
+        popup_message_function(true);
+        // throw "Error2";
+        // alert("ALERT")
     }catch (e) {
-        alert("ALERT")
+        alert(e.message)
     }
+}
+
+function popup_message_function(check){
+    if(check){
+        popup_message.style.color = "green";
+        popup_message.textContent = "«Saved»";
+        for (var i = 0; i < checkBoxes.length; i++) {
+            if (checkBoxes[i].checked == true) {
+                arrCheckBoxes[i] = true;
+            } else {
+                arrCheckBoxes[i] = false;
+            }
+        }
+        document.getElementById("form_notifications_button").disabled = true;
+    } else {
+        popup_message.style.color = "red";
+        popup_message.textContent = "«Error. Try again» ";
+    }
+    popup_message.classList.remove('invisibility');
+    setTimeout(close_popup_message, 5000);
+}
+
+function close_popup_message() {
+    popup_message.classList.add('invisibility');
 }
 
 // function form_notifications_submit() {

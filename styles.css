@@ -360,7 +360,7 @@ h3 {
     padding-left: 16px;
 }
 
-.form_button:disabled {
+.form_button:disabled,  .form_button:disabled:hover{
     height: 40px;
     min-width: 120px;
     background: rgba(98, 2, 238, 0.0001);
@@ -476,4 +476,20 @@ td{
     line-height: 14px;
     color: #66788A;
     margin-left: 26px;
+}
+
+.popup_message{
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    padding: 5px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    /*width: 200px;*/
+    /*height: 100px;*/
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 5%;
 }
