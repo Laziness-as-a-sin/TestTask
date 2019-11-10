@@ -14,13 +14,15 @@ body, html {
 }
 
 .head_top {
-    position: relative;
+    z-index: 9999;
+    position: fixed;
+    height: 64px;
     width: 100%;
     background: #3F51B5;
 }
 
 .in_head_top {
-    position: relative;
+    /*position: fixed;*/
     display: flex;
     align-items: center;
     min-height: 64px;
@@ -29,20 +31,20 @@ body, html {
 }
 
 .in_center_top_head {
-    position: relative;
+    /*position: fixed;*/
     display: flex;
     align-items: center;
     width: 100%;
 }
 
 .logo_icon {
-    position: relative;
+    /*position: fixed;*/
     width: 179px;
     height: 36px;
 }
 
 .top_ad_somethings {
-    position: relative;
+    /*position: fixed;*/
     width: 842px;
     height: 30px;
     background: #333333;
@@ -51,20 +53,20 @@ body, html {
 }
 
 .top_head_right_icons {
-    position: relative;
+    /*position: fixed;*/
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
 }
 
 .icon_logout {
-    position: relative;
+    /*position: fixed;*/
     max-width: 20px;
     max-height: 20px;
 }
 
 .icon_bell {
-    position: relative;
+    /*position: fixed;*/
     max-width: 20px;
     max-height: 20px;
     padding-right: 16px;
@@ -111,7 +113,7 @@ body, html {
     margin-top: 16px;
     width: 100%;
     height: 20px;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -127,7 +129,7 @@ body, html {
     margin-top: 4px;
     height: 16px;
     width: 100%;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -184,6 +186,7 @@ body, html {
 }
 
 .main {
+    margin-top: 64px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -212,6 +215,7 @@ body, html {
     /*padding-top: 20px;*/
     padding-left: 24px;
     height: 57px;
+    cursor: pointer;
 }
 
 .highlighting {
@@ -257,10 +261,10 @@ body, html {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /*height: 100%;*/
     /*width: 375px;*/
     box-sizing: border-box;
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     margin-left: 24px;
 }
 
@@ -276,6 +280,7 @@ body, html {
 }
 
 #right_top_tabs {
+    box-sizing: border-box;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -286,19 +291,113 @@ body, html {
 }
 
 .form_of_upload_img {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     margin: 12px 0 12px;
     width: 375px;
     height: 279px;
-    border: 1px solid green;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+}
+
+.form_of_upload_img_top{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*height: 188px;*/
+}
+
+.form_of_upload_img_bot{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #E4E7EB;
+    /*height: 188px;*/
+}
+
+.form_of_upload_img_top img{
+    box-sizing: border-box;
+    border-radius: 13px;
+    padding-left: 24px;
+    padding-top: 24px;
+    width: 140px;
+    height: 140px;
+}
+
+.form_of_upload_img_top_right{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    width: 188px;
+    height: 188px;
+    /*background: red;*/
+}
+
+.form_of_upload_img_bot button{
+    box-sizing: border-box;
+    border: none;
+    background: #FFFFFF;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    width: 50%;
+    height: 100%;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.l{
+    color: #1665D8;
+}
+
+.r{
+    color: #425A70;
+}
+
+.form_of_upload_img_top_left{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    width: 187px;
+    height: 188px;
+    /*background: green;*/
+    /*padding-top: 24px;*/
+    /*padding-left: 24px;*/
+}
+
+.form_of_upload_img_top_left_text{
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 24px;
+    /*background: yellow;*/
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9EA0A5;
 }
 
 .form_send_setting {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 12px 0 12px;
     min-height: 100px;
-    width: 910px;
+    width: 100%;
+    max-width: 940px;
     background: #FFFFFF;
     border: 1px solid rgba(63, 63, 68, 0.005);
     box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15), 0px 1px 0px rgba(63, 63, 68, 0.05);
@@ -335,6 +434,7 @@ body, html {
 }
 
 .form_send_setting_header_text {
+    box-sizing: border-box;
     margin-top: 35px;
     width: 100%;
     text-align: center;
@@ -361,6 +461,7 @@ h3 {
 }
 
 .form_button:disabled,  .form_button:disabled:hover{
+    cursor: auto;
     height: 40px;
     min-width: 120px;
     background: rgba(98, 2, 238, 0.0001);
@@ -395,6 +496,7 @@ h3 {
 }
 
 .notifications_form_left_part {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -404,6 +506,7 @@ h3 {
 }
 
 .notifications_form_right_part {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -412,6 +515,7 @@ h3 {
 }
 
 .form_notifications_label_text {
+    box-sizing: border-box;
     cursor: pointer;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-style: normal;
@@ -441,6 +545,7 @@ h3 {
     margin-left: -2px;
     margin-right: 6px;
     border: 2px solid #425A70;
+    transition: 0.2s ease all;
 }
 
 .checkbox:checked + .form_notifications_label_text::before{
@@ -490,6 +595,87 @@ td{
     font-size: 20px;
     /*width: 200px;*/
     /*height: 100px;*/
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
     border-radius: 5%;
+}
+
+.input_full {
+    width: 328px;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+.input {
+    box-sizing: border-box;
+    height: 24px;
+    display: block;
+    width: 224px;
+    margin: 16px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.focusable{
+    margin-bottom: 80px;
+    border: 2px solid #1665D8;
+}
+
+.label {
+    box-sizing: border-box;
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 15px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.input:focus ~ .label, .input:valid ~ .label {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    top: -14px;
+    font-size: 14px;
+    padding: 7px;
+    color: #5264AE;
+}
+
+.input:focus ~ .assistive_label, .input:valid ~ .assistive_label {
+    box-sizing: border-box;
+    display: block;
+}
+
+.assistive_label{
+    box-sizing: border-box;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1665D8;
+    display: none;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    margin-left: 15px;
+    margin-bottom: 30px;
 }

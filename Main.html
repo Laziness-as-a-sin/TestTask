@@ -47,7 +47,7 @@
     </div>
 </header>
 <main class="main">
-    <aside class="left_menu">
+    <aside class="left_menu" id="left_menu">
         <div class="block_avatar_name">
             <div class="img_avatar"></div>
             <div class="box_text_name">
@@ -170,27 +170,77 @@
             </div>
         </section>
         <section class="right_content_bot">
-            <div class="right_content_bot_ invisibility">
+            <div class="right_content_bot_ invisibility" id="right_content_bot_1">
                 <div class="right_content_bot_left">
                     <form class="form_of_upload_img">
-
-                    </form>
-                    <form class="form_of_upload_img">
-
+                        <div class="form_of_upload_img_top">
+                            <div class="form_of_upload_img_top_left">
+                                <div class="form_of_upload_img_top_left_text">
+                                    <h2>Basic Profile</h2>
+                                    Rm. Valcea, Romania 4:32PM (GMT-4)
+                                </div>
+                            </div>
+                            <div class="form_of_upload_img_top_right">
+                                <img src="Stefan.jpg">
+                            </div>
+                        </div>
+                        <div class="form_of_upload_img_bot">
+                            <button class="l">UPLOAD PICTURE</button>
+                            <button class="r">REMOVE PICTURE</button>
+                        </div>
                     </form>
                 </div>
                 <div class="right_content_bot_right">
-                    <form class="form_send_setting">
+                    <form class="form_send_setting" id="form_basic_profile">
                         <header>
-                            <!--                            <div class="form_send_setting_header_text">-->
                             <h2>Basic Profile</h2>
                             <h3>The information can be edited from your profile page</h3>
-                            <!--                            </div>-->
                         </header>
-                        <article></article>
-                        <footer></footer>
+                        <article style="padding-top: 33px;">
+                            <div style=" box-sizing: border-box;position: relative; display: flex; flex-direction: column">
+                                <div class="input_full">
+                                    <input type="text" class="input" required>
+                                    <label class="label">First name</label>
+                                    <label class="assistive_label">assistive_label</label>
+                                </div>
+                                <div class="input_full ">
+                                    <input type="email" class="input" required>
+                                    <label class="label">Email</label>
+                                    <label class="assistive_label">assistive_label</label>
+                                </div>
+                                <div class="input_full">
+                                    <input type="text" class="input" required>
+                                    <label class="label">City</label>
+                                    <label class="assistive_label">assistive_label</label>
+                                </div>
+                            </div>
+                            <div style=" box-sizing: border-box; position: relative; display: flex; flex-direction: column">
+
+                                <div class="input_full">
+                                    <input type="text" class="input" required>
+                                    <label class="label">Last Name</label>
+                                    <label class="assistive_label">assistive_label</label>
+                                </div>
+                                <div class="input_full">
+                                    <input type="text" class="input" required>
+                                    <label class="label">Phone Number</label>
+                                    <label class="assistive_label">assistive_label</label>
+                                </div>
+                                <div class="input_full">
+                                    <input type="text" class="input" required>
+                                    <label class="label">Something</label>
+                                    <label class="assistive_label">assistive_label</label>
+                                </div>
+                            </div>
+                        </article>
+                        <footer>
+                            <button class="form_button no_select" id="form_basic_profile_button"
+                                    onclick="form_notifications_submit()" disabled>SAVE SETTINGS
+                            </button>
+                        </footer>
                     </form>
-                    <form class="form_send_setting" action="in.php" method="post" id="form_notifications" name="form_notifications" target="votar">
+                    <form class="form_send_setting" action="in.php" method="post" id="form_notifications"
+                          name="form_notifications" target="votar">
                         <header>
                             <!--                            <div class="form_send_setting_header_text">-->
                             <h2>Notifications</h2>
@@ -244,21 +294,24 @@
                                 <table>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" class="checkbox" id="checkbox4" name="messages_email">
+                                            <input type="checkbox" class="checkbox" id="checkbox4"
+                                                   name="messages_email">
                                             <label for="checkbox4"
                                                    class="form_notifications_label_text no_select">Email</label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" class="checkbox" id="checkbox5" name="messages_push_notifications">
+                                            <input type="checkbox" class="checkbox" id="checkbox5"
+                                                   name="messages_push_notifications">
                                             <label for="checkbox5" class="form_notifications_label_text no_select">Push
                                                 notifications</label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" class="checkbox" id="checkbox6" name="messages_text_messages">
+                                            <input type="checkbox" class="checkbox" id="checkbox6"
+                                                   name="messages_text_messages">
                                             <label for="checkbox6" class="form_notifications_label_text no_select">Text
                                                 Messages</label>
                                         </td>
@@ -267,7 +320,9 @@
                             </div>
                         </article>
                         <footer>
-                            <button class="form_button no_select" id="form_notifications_button" onclick="form_notifications_submit()" disabled>SAVE</button>
+                            <button class="form_button no_select" id="form_notifications_button"
+                                    onclick="form_notifications_submit()" disabled>SAVE
+                            </button>
                         </footer>
                     </form>
                 </div>
