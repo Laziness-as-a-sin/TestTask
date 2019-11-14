@@ -637,6 +637,7 @@ td{
 }
 
 .label {
+    display: none;
     box-sizing: border-box;
     color: #999;
     font-size: 18px;
@@ -649,8 +650,16 @@ td{
     -webkit-transition: 0.2s ease all;
 }
 
+.input:placeholder-shown .label{
+    display: block;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
 /* active state */
 .input:focus ~ .label, .input:valid ~ .label {
+    display: block;
     box-sizing: border-box;
     background: #FFFFFF;
     top: -14px;
@@ -665,6 +674,7 @@ td{
 }
 
 .assistive_label{
+
     box-sizing: border-box;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-style: normal;
