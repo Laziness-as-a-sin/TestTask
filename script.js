@@ -98,6 +98,25 @@ function close_popup_message() {
     popup_message.classList.add('invisibility');
 }
 
+window.onresize = function () {
+    left_menu = document.getElementById('left_menu');
+    right_content_bot = document.getElementById('right_content_bot_1');
+    let browserZoomLevel = Math.round(window.devicePixelRatio * 100);
+    switch (browserZoomLevel) {
+        case 150:
+            right_content_bot.style.flexDirection = "column";
+            break
+        case 200:
+            left_menu.style.display = "none";
+            break
+        case 100:
+            right_content_bot.style.flexDirection = "row";
+            left_menu.style.display = "flex";
+            break
+    }
+    console.log(browserZoomLevel);
+}
+
 // function form_notifications_submit() {
 //     // form = document.getElementById('form_notifications');
 //     // var req = getXmlHttp();
